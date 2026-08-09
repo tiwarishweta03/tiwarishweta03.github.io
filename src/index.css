@@ -107,8 +107,13 @@ body {
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+}
+
+/* Solid CTAs must never inherit page text color (was hiding “Hire Me” until hover) */
+a[data-testid='hire-me'],
+.cta-solid {
+  color: #ffffff !important;
 }
 
 img,

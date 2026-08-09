@@ -60,7 +60,7 @@ export function Nav() {
           <ThemeToggle />
           <a
             href={profile.emailHref}
-            className="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-primary-deep"
+            className="cta-solid rounded-full bg-primary px-4 py-2.5 text-sm font-semibold transition hover:bg-primary-deep"
           >
             Hire me
           </a>
