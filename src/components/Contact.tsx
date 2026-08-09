@@ -29,7 +29,7 @@ export function Contact() {
                 <a
                   href={profile.emailHref}
                   data-anime-hover
-                  className="inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-bg transition hover:bg-primary-deep"
+                  className="inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-primary-deep"
                 >
                   Hire me
                   <ArrowUpRight className="h-4 w-4" />

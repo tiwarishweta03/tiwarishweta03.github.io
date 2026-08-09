@@ -101,10 +101,14 @@ export function Hero() {
           <a
             href={profile.emailHref}
             data-testid="hire-me"
-            className="group inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-deep"
+            className="group inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold shadow-sm transition hover:bg-primary-deep"
+            style={{ color: '#ffffff' }}
           >
             Hire Me
-            <ArrowUpRight className="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+            <ArrowUpRight
+              className="h-4 w-4 transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              style={{ color: '#ffffff' }}
+            />
           </a>
           <p className="text-xs uppercase tracking-[0.2em] text-text-muted">
             Open to multinational HRBP roles
