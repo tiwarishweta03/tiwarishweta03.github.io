@@ -5,18 +5,21 @@ test.describe('Shweta portfolio', () => {
     await page.goto('/')
     await page.waitForLoadState('networkidle')
 
-    await expect(page.getByTestId('hire-me')).toBeVisible()
-    await expect(page.getByTestId('full-resume')).toBeVisible()
+    const hire = page.getByTestId('hire-me')
+    await expect(hire).toBeVisible()
+    await expect(hire).toContainText('Hire Me')
+    await expect(hire).toHaveCSS('color', 'rgb(255, 255, 255)')
     await expect(page.getByTestId('impact-section')).toBeVisible()
-    await expect(page.getByRole('heading', { name: /Proof, not promises/i })).toBeVisible()
+    await expect(page.getByRole('link', { name: /Download CV/i })).toHaveCount(0)
   })
 
-  test('hero shows full name large', async ({ page }) => {
+  test('hero shows full name large and no framed portrait', async ({ page }) => {
     await page.goto('/')
     const name = page.getByTestId('hero-name')
     await expect(name).toBeVisible()
     await expect(name).toContainText('Shweta')
     await expect(name).toContainText('Tiwari')
+    await expect(page.locator('#top img')).toHaveCount(0)
   })
 
   test('does not show Faridabad or Haryana', async ({ page }) => {

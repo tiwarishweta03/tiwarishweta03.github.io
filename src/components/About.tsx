@@ -10,52 +10,46 @@ export function About() {
           About
         </p>
         <h2
-          className="mt-3 max-w-2xl font-brand text-[clamp(2rem,6vw,3.4rem)] font-medium leading-tight tracking-tight text-text"
+          className="mt-3 max-w-2xl font-harmond text-[clamp(2.2rem,6vw,3.6rem)] font-semibold leading-tight tracking-tight text-text"
           data-anime-item
         >
-          A people partner who builds capability, culture, and clarity.
+          Warm authority. Clear systems. Human outcomes.
         </h2>
       </AnimeReveal>
 
       <AnimeReveal className="mt-10" delay={80} staggerMs={110}>
-        <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div
-            className="glass-panel overflow-hidden rounded-[1.5rem] sm:rounded-[2rem]"
+            className="glass-panel rounded-[1.5rem] p-5 sm:rounded-[2rem] sm:p-6 md:p-8"
             data-anime-item
           >
-            <div className="relative aspect-[5/4] overflow-hidden">
-              <img
-                src={profile.portraitFull}
-                alt="Professional portrait in studio"
-                className="h-full w-full object-cover object-top grayscale"
-              />
-            </div>
-            <div className="p-5 sm:p-6 md:p-8">
-              <p className="text-sm text-primary">{profile.title}</p>
-              <p className="mt-1 text-sm text-text-muted">{profile.subtitle}</p>
-              <a
-                href={profile.whatsappHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-anime-hover
-                className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-sm font-semibold text-bg transition hover:bg-primary-deep"
-              >
-                Send a message
-              </a>
-              <div className="mt-6">
-                <p className="mb-3 text-xs uppercase tracking-[0.18em] text-text-muted">
-                  Languages
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {languages.map((lang) => (
-                    <span
-                      key={lang.name}
-                      className="rounded-full border border-glass-border bg-bg-elevated px-3 py-1.5 text-sm text-text-muted"
-                    >
-                      {lang.name} · {lang.level}
-                    </span>
-                  ))}
-                </div>
+            <p className="text-sm text-primary">{profile.title}</p>
+            <p className="mt-1 text-sm text-text-muted">{profile.subtitle}</p>
+            <p className="mt-5 text-sm leading-relaxed text-text-muted">
+              Approachable in the room, rigorous in the system — the blend multinational teams
+              trust when culture and performance have to move together.
+            </p>
+            <a
+              href={profile.whatsappHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-primary-deep"
+            >
+              Send a message
+            </a>
+            <div className="mt-6">
+              <p className="mb-3 text-xs uppercase tracking-[0.18em] text-text-muted">
+                Languages
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {languages.map((lang) => (
+                  <span
+                    key={lang.name}
+                    className="rounded-full border border-glass-border bg-bg-elevated/80 px-3 py-1.5 text-sm text-text-muted"
+                  >
+                    {lang.name} · {lang.level}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
@@ -67,8 +61,8 @@ export function About() {
             <div className="absolute right-5 top-5 text-white/80 sm:right-6 sm:top-6">
               <Heart className="h-5 w-5 fill-current" />
             </div>
-            <p className="text-xs uppercase tracking-[0.2em] text-white/80">About me</p>
-            <p className="mt-5 font-brand text-2xl leading-snug tracking-tight sm:text-3xl">
+            <p className="text-xs uppercase tracking-[0.2em] text-white/80">Philosophy</p>
+            <p className="mt-5 font-harmond text-2xl leading-snug tracking-tight sm:text-3xl">
               Business goals meet human experience.
             </p>
             <p className="mt-4 text-sm leading-relaxed text-white/90 sm:text-[15px]">

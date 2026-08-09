@@ -60,7 +60,7 @@ export function Nav() {
           <ThemeToggle />
           <a
             href={profile.emailHref}
-            className="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-bg transition hover:bg-primary-deep"
+            className="rounded-full bg-primary px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-primary-deep"
           >
             Hire me
           </a>
@@ -95,7 +95,7 @@ export function Nav() {
             ))}
             <a
               href={profile.emailHref}
-              className="mt-2 rounded-full bg-primary px-4 py-3.5 text-center text-sm font-semibold text-bg"
+              className="mt-2 rounded-full bg-primary px-4 py-3.5 text-center text-sm font-semibold text-white"
             >
               Hire me
             </a>
