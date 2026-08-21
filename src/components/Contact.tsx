@@ -16,7 +16,7 @@ export function Contact() {
           <div className="grid gap-8 sm:gap-10 lg:grid-cols-[1.15fr_0.85fr]">
             <div>
               <p className="text-xs uppercase tracking-[0.22em] text-primary">Hire Shweta</p>
-              <h2 className="mt-3 font-brand text-[clamp(2rem,6vw,3.4rem)] font-medium leading-tight tracking-tight text-text">
+              <h2 className="mt-3 font-harmond text-[clamp(2rem,6vw,3.4rem)] font-semibold leading-tight tracking-tight text-text">
                 Ready for your next people priority.
               </h2>
               <p className="mt-4 max-w-xl text-text-muted">
@@ -29,7 +29,7 @@ export function Contact() {
                 <a
                   href={profile.emailHref}
                   data-anime-hover
-                  className="inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-primary-deep"
+                  className="cta-solid inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 py-3.5 text-sm font-semibold transition hover:bg-primary-deep"
                 >
                   Hire me
                   <ArrowUpRight className="h-4 w-4" />
@@ -59,7 +59,7 @@ export function Contact() {
             <div className="space-y-4">
               <div className="rounded-2xl border border-primary/25 bg-primary/10 p-5">
                 <p className="text-xs uppercase tracking-[0.16em] text-primary">Full profile</p>
-                <p className="mt-2 font-brand text-2xl tracking-tight text-text">
+                <p className="mt-2 font-harmond text-2xl tracking-tight text-text">
                   ShwetaTiwariResume2026.pdf
                 </p>
                 <p className="mt-2 text-sm text-text-muted">

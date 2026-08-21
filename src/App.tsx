@@ -18,8 +18,11 @@ export default function App() {
     <div ref={rootRef} className="relative min-h-screen bg-bg text-text">
       <SiteBackdrop />
       <div className="relative z-10">
+        <a href="#main" className="skip-link">
+          Skip to content
+        </a>
         <Nav />
-        <main>
+        <main id="main">
           <Hero />
           <About />
           <Impact />

@@ -33,7 +33,7 @@ export function About() {
               href={profile.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-sm font-semibold text-white transition hover:bg-primary-deep"
+              className="cta-solid mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-sm font-semibold transition hover:bg-primary-deep"
             >
               Send a message
             </a>

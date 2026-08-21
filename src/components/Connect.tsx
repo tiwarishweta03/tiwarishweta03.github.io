@@ -14,7 +14,7 @@ export function Connect() {
             Connect
           </p>
           <h2
-            className="mt-3 font-brand text-[clamp(2rem,6vw,3.4rem)] font-medium tracking-tight text-text"
+            className="mt-3 font-harmond text-[clamp(2rem,6vw,3.4rem)] font-semibold tracking-tight text-text"
             data-anime-item
           >
             Find Shweta online.
@@ -49,7 +49,7 @@ export function Connect() {
                 <div className="p-5">
                   <div className="flex items-start justify-between gap-3">
                     <div>
-                      <p className="font-brand text-2xl tracking-tight text-text">
+                      <p className="font-harmond text-2xl font-semibold tracking-tight text-text">
                         {social.label}
                       </p>
                       <p className="mt-1 text-sm text-primary">{social.handle}</p>

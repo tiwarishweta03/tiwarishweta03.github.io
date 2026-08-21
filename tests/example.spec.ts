@@ -46,4 +46,31 @@ test.describe('Shweta portfolio', () => {
     expect(after).toBeTruthy()
     expect(after).not.toEqual(before)
   })
+
+  test('every solid CTA stays white at rest', async ({ page }) => {
+    await page.goto('/')
+    const solids = page.locator('.cta-solid')
+    await expect(solids.first()).toBeVisible()
+    const count = await solids.count()
+    expect(count).toBeGreaterThanOrEqual(3)
+    for (let i = 0; i < count; i++) {
+      await expect(solids.nth(i)).toHaveCSS('color', /rgb\(\s*255,\s*255,\s*255\s*\)/)
+    }
+  })
+
+  test('desktop nav exposes résumé download', async ({ page }) => {
+    await page.goto('/')
+    const resume = page.getByTestId('nav-resume')
+    await expect(resume).toBeVisible()
+    await expect(resume).toHaveAttribute('href', /ShwetaTiwariResume2026\.pdf$/)
+  })
+
+  test('skip link and main landmark exist', async ({ page }) => {
+    await page.goto('/')
+    await expect(page.getByRole('link', { name: /Skip to content/i })).toHaveAttribute(
+      'href',
+      '#main',
+    )
+    await expect(page.locator('main#main')).toBeVisible()
+  })
 })

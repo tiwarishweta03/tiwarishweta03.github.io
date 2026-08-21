@@ -41,7 +41,7 @@ export function Experience() {
           Experience
         </p>
         <h2
-          className="mt-3 font-brand text-[clamp(2rem,6vw,3.4rem)] font-medium tracking-tight text-text"
+          className="mt-3 font-harmond text-[clamp(2rem,6vw,3.4rem)] font-semibold tracking-tight text-text"
           data-anime-item
         >
           Where the work happens.
@@ -56,7 +56,7 @@ export function Experience() {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-sm text-primary">{experience.period}</p>
-              <h3 className="mt-2 font-brand text-2xl tracking-tight md:text-3xl">
+              <h3 className="mt-2 font-harmond text-2xl font-semibold tracking-tight md:text-3xl">
                 {experience.role}
               </h3>
               <p className="mt-1 text-text-muted">{experience.company}</p>
@@ -116,7 +116,7 @@ export function Experience() {
           Education
         </p>
         <h3
-          className="mt-3 max-w-2xl font-brand text-[clamp(1.6rem,4vw,2.4rem)] font-medium tracking-tight text-text"
+          className="mt-3 max-w-2xl font-harmond text-[clamp(1.6rem,4vw,2.4rem)] font-semibold tracking-tight text-text"
           data-anime-item
         >
           Credentials that compound — engineering rigor, HR strategy, digital HR future.
@@ -135,7 +135,7 @@ export function Experience() {
               className="glass-panel flex flex-col rounded-3xl p-5"
             >
               <p className="text-xs uppercase tracking-[0.16em] text-primary">{ed.period}</p>
-              <h4 className="mt-3 font-brand text-xl tracking-tight text-text">{ed.school}</h4>
+              <h4 className="mt-3 font-harmond text-xl font-semibold tracking-tight text-text">{ed.school}</h4>
               <p className="mt-2 text-sm leading-relaxed text-text-muted">{ed.degree}</p>
               <p className="mt-4 flex-1 text-sm leading-relaxed text-text/90">{ed.note}</p>
               <p className="mt-4 text-xs text-text-muted">{ed.place}</p>

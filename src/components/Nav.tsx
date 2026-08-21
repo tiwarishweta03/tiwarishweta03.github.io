@@ -59,8 +59,16 @@ export function Nav() {
           ))}
           <ThemeToggle />
           <a
+            href={profile.resumeUrl}
+            download
+            data-testid="nav-resume"
+            className="text-sm font-semibold text-text-muted transition hover:text-primary"
+          >
+            Résumé
+          </a>
+          <a
             href={profile.emailHref}
-            className="cta-solid rounded-full bg-primary px-4 py-2.5 text-sm font-semibold transition hover:bg-primary-deep"
+            className="cta-solid inline-flex min-h-11 items-center rounded-full bg-primary px-4 py-2.5 text-sm font-semibold transition hover:bg-primary-deep"
           >
             Hire me
           </a>
@@ -95,7 +103,7 @@ export function Nav() {
             ))}
             <a
               href={profile.emailHref}
-              className="mt-2 rounded-full bg-primary px-4 py-3.5 text-center text-sm font-semibold text-white"
+              className="cta-solid mt-2 rounded-full bg-primary px-4 py-3.5 text-center text-sm font-semibold"
             >
               Hire me
             </a>
