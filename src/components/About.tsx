@@ -24,7 +24,6 @@ export function About() {
             data-anime-item
           >
             <p className="text-sm text-primary">{profile.title}</p>
-            <p className="mt-1 text-sm text-text-muted">{profile.subtitle}</p>
             <p className="mt-5 text-sm leading-relaxed text-text-muted">
               Approachable in the room, rigorous in the system — the blend multinational teams
               trust when culture and performance have to move together.
