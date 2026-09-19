@@ -109,7 +109,7 @@ export const experiences = [
   {
     role: 'OD & Talent Specialist',
     company: 'Indian Oil Adani Gas Pvt. Ltd.',
-    period: 'Aug 2025 – Present',
+    period: 'Sep 2026 – Present',
     current: true,
     programs: [
       'Talent Review',
@@ -129,7 +129,7 @@ export const experiences = [
   {
     role: 'Manager – Human Resources Business Partner',
     company: 'Escorts Kubota Limited',
-    period: 'Jul 2022 – Aug 2025',
+    period: 'Jul 2022 – Sep 2026',
     current: false,
     programs: [
       'Leadership Connect',
