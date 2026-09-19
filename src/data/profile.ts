@@ -7,8 +7,8 @@ const asset = (path: string) => {
 export const profile = {
   name: 'Shweta Tiwari',
   brand: 'Shweta Tiwari',
-  title: 'HR Business Partner',
-  subtitle: 'Organizational Development & Employee Engagement Specialist',
+  title: 'OD & Talent Specialist',
+  subtitle: 'Organizational Development & Talent Management',
   tagline: 'People strategy that moves business forward',
   availability: 'Open to multinational HRBP · OD · Talent roles',
   location: 'Open to relocate · hybrid · remote-friendly',
@@ -22,7 +22,7 @@ export const profile = {
   portraitClose: asset('portraits/portrait-close.png'),
   portraitFull: asset('portraits/portrait-full.png'),
   summary:
-    'HR Business Partner with 4+ years driving talent management, organizational development, employee engagement, and learning across manufacturing and corporate environments. Partners with business leaders on people strategies that support growth, capability, and retention — currently deepening Digital HR & AI-driven analytics at XLRI Jamshedpur.',
+    'OD & Talent Specialist with 4+ years driving talent management, organizational development, employee engagement, and learning across manufacturing, energy, and corporate environments. Partners with business leaders on people strategies that support growth, capability, and retention — currently deepening Digital HR & AI-driven analytics at XLRI Jamshedpur.',
   socials: [
     {
       id: 'linkedin',
@@ -105,27 +105,50 @@ export const achievements = [
   },
 ]
 
-export const experience = {
-  role: 'Manager – Human Resources Business Partner',
-  company: 'Escorts Kubota Limited',
-  period: 'Jul 2022 – Present',
-  programs: [
-    'Leadership Connect',
-    'Career Pathing',
-    'Aspirational Achievement',
-    'EKCAP',
-    'Udaan',
-    'Campus Capability',
-  ],
-  bullets: [
-    'Partner with business leaders on engagement, workforce planning, performance management, and talent development.',
-    'Design and deliver learning interventions aligned to business capability needs.',
-    'Manage employee lifecycle — onboarding, engagement, performance reviews, and employee support.',
-    'Support DEI, policy implementation, compliance, and organizational effectiveness.',
-    'Enable cultural integration and change management during transformation programs.',
-    'Use LMS platforms and workforce analytics to track learning effectiveness and development outcomes.',
-  ],
-} as const
+export const experiences = [
+  {
+    role: 'OD & Talent Specialist',
+    company: 'Indian Oil Adani Gas Pvt. Ltd.',
+    period: 'Aug 2025 – Present',
+    current: true,
+    programs: [
+      'Talent Review',
+      'Succession Planning',
+      'Capability Mapping',
+      'Leadership Pipeline',
+    ],
+    bullets: [
+      'Drive organizational development initiatives — org design, role clarity, and capability mapping aligned to business growth plans.',
+      'Own the talent management cycle: identification, review, and succession planning for critical and leadership roles.',
+      'Partner with business leaders to translate workforce and talent gaps into structured development and hiring plans.',
+      'Design and roll out learning and capability-building programs that strengthen bench strength across functions.',
+      'Track talent and OD metrics — attrition, internal mobility, and development outcomes — to inform people decisions.',
+      'Support performance management, employee engagement, and change management through organizational transitions.',
+    ],
+  },
+  {
+    role: 'Manager – Human Resources Business Partner',
+    company: 'Escorts Kubota Limited',
+    period: 'Jul 2022 – Aug 2025',
+    current: false,
+    programs: [
+      'Leadership Connect',
+      'Career Pathing',
+      'Aspirational Achievement',
+      'EKCAP',
+      'Udaan',
+      'Campus Capability',
+    ],
+    bullets: [
+      'Partnered with business leaders on engagement, workforce planning, performance management, and talent development.',
+      'Designed and delivered learning interventions aligned to business capability needs.',
+      'Managed employee lifecycle — onboarding, engagement, performance reviews, and employee support.',
+      'Supported DEI, policy implementation, compliance, and organizational effectiveness.',
+      'Enabled cultural integration and change management during transformation programs.',
+      'Used LMS platforms and workforce analytics to track learning effectiveness and development outcomes.',
+    ],
+  },
+] as const
 
 export const education = [
   {

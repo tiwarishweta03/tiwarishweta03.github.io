@@ -88,9 +88,9 @@ export function Hero() {
             The kind of HR partner who makes leaders feel heard — and teams feel ready.
           </p>
           <p className="text-sm leading-relaxed text-text-muted sm:text-[15px]">
-            {profile.title} · {profile.subtitle}. Designing engagement, talent pipelines, and
-            learning systems for organizations that measure culture as carefully as they measure
-            growth.
+            {profile.title} at Indian Oil Adani Gas Pvt. Ltd. Designing organizational
+            development, talent pipelines, and learning systems for organizations that measure
+            culture as carefully as they measure growth.
           </p>
         </div>
 

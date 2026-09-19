@@ -67,9 +67,10 @@ export function About() {
             </p>
             <p className="mt-4 text-sm leading-relaxed text-white/90 sm:text-[15px]">
               I design engagement systems, leadership pipelines, and learning journeys that
-              stick — then measure what changed. At Escorts Kubota I partner with leaders on
-              workforce effectiveness while advancing DEI and change. At XLRI I&apos;m sharpening
-              digital HR transformation so people decisions stay both human and measurable.
+              stick — then measure what changed. At Indian Oil Adani Gas I partner with leaders on
+              organizational development and talent management, building on HRBP foundations from
+              Escorts Kubota. At XLRI I&apos;m sharpening digital HR transformation so people
+              decisions stay both human and measurable.
             </p>
             <div className="mt-8 grid grid-cols-2 gap-4 border-t border-white/20 pt-6 text-sm">
               <div>

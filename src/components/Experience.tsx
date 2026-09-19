@@ -1,6 +1,6 @@
 import { AnimeReveal } from '@/components/AnimeReveal'
 import { InfiniteSlider } from '@/components/motion/InfiniteSlider'
-import { education, experience, skills } from '@/data/profile'
+import { education, experiences, skills } from '@/data/profile'
 import { prefersReducedMotion, safeAnimate, stagger } from '@/lib/anime'
 import { useEffect, useRef } from 'react'
 
@@ -48,51 +48,57 @@ export function Experience() {
         </h2>
       </AnimeReveal>
 
-      <AnimeReveal className="mt-10" delay={80}>
-        <article
-          className="glass-panel rounded-[1.5rem] p-5 sm:rounded-[2rem] sm:p-6 md:p-10"
-          data-anime-item
-        >
-          <div className="flex flex-wrap items-start justify-between gap-4">
-            <div>
-              <p className="text-sm text-primary">{experience.period}</p>
-              <h3 className="mt-2 font-harmond text-2xl font-semibold tracking-tight md:text-3xl">
-                {experience.role}
-              </h3>
-              <p className="mt-1 text-text-muted">{experience.company}</p>
-            </div>
-            <span className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs uppercase tracking-[0.16em] text-primary">
-              Current
-            </span>
-          </div>
+      <div className="mt-10 space-y-6">
+        {experiences.map((job, i) => (
+          <AnimeReveal key={job.company} delay={80 + i * 60}>
+            <article
+              className="glass-panel rounded-[1.5rem] p-5 sm:rounded-[2rem] sm:p-6 md:p-10"
+              data-anime-item
+            >
+              <div className="flex flex-wrap items-start justify-between gap-4">
+                <div>
+                  <p className="text-sm text-primary">{job.period}</p>
+                  <h3 className="mt-2 font-harmond text-2xl font-semibold tracking-tight md:text-3xl">
+                    {job.role}
+                  </h3>
+                  <p className="mt-1 text-text-muted">{job.company}</p>
+                </div>
+                {job.current && (
+                  <span className="rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs uppercase tracking-[0.16em] text-primary">
+                    Current
+                  </span>
+                )}
+              </div>
 
-          <ul className="mt-8 space-y-3 text-sm leading-relaxed text-text-muted sm:text-[15px]">
-            {experience.bullets.map((bullet) => (
-              <li key={bullet} className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary-soft" />
-                <span>{bullet}</span>
-              </li>
-            ))}
-          </ul>
+              <ul className="mt-8 space-y-3 text-sm leading-relaxed text-text-muted sm:text-[15px]">
+                {job.bullets.map((bullet) => (
+                  <li key={bullet} className="flex gap-3">
+                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-secondary-soft" />
+                    <span>{bullet}</span>
+                  </li>
+                ))}
+              </ul>
 
-          <div className="mt-8">
-            <p className="mb-3 text-xs uppercase tracking-[0.18em] text-text-muted">
-              Signature programs
-            </p>
-            <div className="flex flex-wrap gap-2">
-              {experience.programs.map((program) => (
-                <span
-                  key={program}
-                  data-anime-hover
-                  className="rounded-full bg-secondary/20 px-3 py-1.5 text-sm text-text"
-                >
-                  {program}
-                </span>
-              ))}
-            </div>
-          </div>
-        </article>
-      </AnimeReveal>
+              <div className="mt-8">
+                <p className="mb-3 text-xs uppercase tracking-[0.18em] text-text-muted">
+                  Signature programs
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {job.programs.map((program) => (
+                    <span
+                      key={program}
+                      data-anime-hover
+                      className="rounded-full bg-secondary/20 px-3 py-1.5 text-sm text-text"
+                    >
+                      {program}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </article>
+          </AnimeReveal>
+        ))}
+      </div>
 
       <div ref={skillsRef} className="mt-14">
         <p className="mb-5 text-xs uppercase tracking-[0.22em] text-primary">
