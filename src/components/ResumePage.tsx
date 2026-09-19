@@ -35,9 +35,7 @@ export function ResumePage() {
           <h1 className="font-harmond text-4xl font-semibold tracking-tight sm:text-5xl">
             {profile.name}
           </h1>
-          <p className="mt-2 text-lg text-[#2d8b8b]">
-            {profile.title} · {profile.subtitle}
-          </p>
+          <p className="mt-2 text-lg text-[#2d8b8b]">{profile.title}</p>
           <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#4a4a4a]">
             <a href={profile.emailHref} className="inline-flex items-center gap-1.5 hover:underline">
               <Mail className="h-3.5 w-3.5" />
