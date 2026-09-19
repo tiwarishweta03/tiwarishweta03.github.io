@@ -4,8 +4,7 @@ import { ArrowUpRight } from 'lucide-react'
 import { useEffect, useRef } from 'react'
 
 /**
- * Editorial HR hero — warm authority.
- * Portrait lives only as a ghost in SiteBackdrop; no framed photos here.
+ * Editorial HR hero — warm authority. No framed photos here.
  */
 export function Hero() {
   const rootRef = useRef<HTMLElement>(null)

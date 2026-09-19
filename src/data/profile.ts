@@ -19,8 +19,6 @@ export const profile = {
   resumePath: asset('ShwetaTiwariResume2026.pdf'),
   resumeUrl: asset('ShwetaTiwariResume2026.pdf'),
   whatsappHref: `https://wa.me/919368504295?text=${encodeURIComponent('Hi Shweta, I found your portfolio and would like to discuss an HR opportunity.')}`,
-  portraitClose: asset('portraits/portrait-close.png'),
-  portraitFull: asset('portraits/portrait-full.png'),
   summary:
     'OD & Talent Specialist with 4+ years driving talent management, organizational development, employee engagement, and learning across manufacturing, energy, and corporate environments. Partners with business leaders on people strategies that support growth, capability, and retention — currently deepening Digital HR & AI-driven analytics at XLRI Jamshedpur.',
   socials: [
