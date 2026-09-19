@@ -59,8 +59,7 @@ export function Nav() {
           ))}
           <ThemeToggle />
           <a
-            href={profile.resumeUrl}
-            download
+            href="/resume"
             data-testid="nav-resume"
             className="text-sm font-semibold text-text-muted transition hover:text-primary"
           >
@@ -108,8 +107,8 @@ export function Nav() {
               Hire me
             </a>
             <a
-              href={profile.resumeUrl}
-              download
+              href="/resume"
+              onClick={() => setOpen(false)}
               className="rounded-full border border-glass-border px-4 py-3 text-center text-sm font-semibold text-text"
             >
               Full résumé
