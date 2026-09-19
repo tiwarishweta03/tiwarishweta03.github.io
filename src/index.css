@@ -17,11 +17,11 @@
   --color-accent: var(--theme-accent);
   --color-glass: var(--theme-glass);
   --color-glass-border: var(--theme-glass-border);
-  --font-display: 'Instrument Serif', 'Times New Roman', serif;
+  --font-display: 'Fraunces', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
-  --font-brand: 'Cormorant Garamond', 'Instrument Serif', serif;
-  /* Harmond-inspired high-contrast display (Bodoni Moda — web-licensed twin aesthetic) */
-  --font-harmond: 'Bodoni Moda', 'Cormorant Garamond', Georgia, serif;
+  --font-brand: 'Fraunces', Georgia, serif;
+  /* Editorial display serif — legible at large sizes, moderate stroke contrast */
+  --font-harmond: 'Fraunces', Georgia, serif;
 }
 
 /*

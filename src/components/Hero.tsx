@@ -73,7 +73,7 @@ export function Hero() {
         <h1
           data-testid="hero-name"
           data-hero-reveal
-          className="font-harmond mt-6 max-w-4xl text-[clamp(3.5rem,13vw,7.5rem)] font-semibold leading-[0.88] tracking-[-0.035em] text-text"
+          className="font-harmond mt-6 max-w-4xl text-[clamp(3.5rem,13vw,7.5rem)] font-semibold leading-[0.88] tracking-[-0.015em] text-text"
         >
           Shweta
           <br />
